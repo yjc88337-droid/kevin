@@ -29,7 +29,7 @@
 1. 按 Win + R 键
 2. 输入 cmd 并回车
 3. 输入以下命令切换到项目目录：
-   cd D:\CE301project\FinBERT-LSTM-QQQ
+   cd D:\projet
 
 
 步骤2：激活虚拟环境
@@ -76,7 +76,7 @@
 
 确保你已经：
 ✓ 激活了虚拟环境（看到命令行前的 .venv 标记）
-✓ 在项目目录 D:\CE301project\FinBERT-LSTM-QQQ 下
+✓ 在项目目录 D:\projet 下
 
 
 --------------------------------------------------------------------------------
@@ -482,7 +482,7 @@ requirements.txt
 第1天：环境准备和快速测试（10分钟）
 ------------------------------------
 1. 打开命令行，进入项目目录
-   cd D:\CE301project\FinBERT-LSTM-QQQ
+   cd D:\projet
 
 2. 激活虚拟环境
    .venv\Scripts\activate

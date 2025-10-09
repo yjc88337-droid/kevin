@@ -31,21 +31,22 @@ print(f"[INFO] Train: {len_train} rows, Test: {len_test} rows")
 
 # Normalizing data
 scaler = MinMaxScaler()
-train, test = scaler.fit_transform(train), scaler.fit_transform(test)
+train = scaler.fit_transform(train)
+test = scaler.transform(test)
 
 # Splitting training data to x and y
 X_train = []
 for i in range(len_train - sequence_length):
     X_train.append(train[i : i + sequence_length])
-X_train = np.array(X_train).astype(float)
-y_train = np.array(train[sequence_length:]).astype(float)
+X_train = np.array(X_train, dtype=float).reshape(-1, sequence_length)
+y_train = np.array(train[sequence_length:], dtype=float).reshape(-1, 1)
 
 # Splitting testing data to x and y
 X_test = []
 for i in range(len_test - sequence_length):
     X_test.append(test[i : i + sequence_length])
-X_test = np.array(X_test).astype(float)
-y_test = np.array(test[sequence_length:]).astype(float)
+X_test = np.array(X_test, dtype=float).reshape(-1, sequence_length)
+y_test = np.array(test[sequence_length:], dtype=float).reshape(-1, 1)
 
 print(f"[INFO] X_train shape: {X_train.shape}, y_train shape: {y_train.shape}")
 print(f"[INFO] X_test shape: {X_test.shape}, y_test shape: {y_test.shape}")

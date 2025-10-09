@@ -1,0 +1,49 @@
+======================================================================
+项目文件存放位置速查
+======================================================================
+
+项目根目录
+----------
+- Linux/容器环境：/workspace/kevin/
+- Windows 示例：D:\\projet\\  （如果你在 Windows 上克隆到该目录）
+
+核心文档
+--------
+- 项目总览文档：/workspace/kevin/PROJECT_DOCUMENTATION.txt
+- 工作总结：/workspace/kevin/PROJECT_SUMMARY.md
+- 使用指引（中文）：/workspace/kevin/项目使用指引.txt
+
+主要脚本
+--------
+- 数据收集：
+  - /workspace/kevin/collect_stock_data.py
+  - /workspace/kevin/collect_news_rss.py
+  - /workspace/kevin/collect_news_finance_rss.py
+  - /workspace/kevin/collect_news_yahoo.py
+  - /workspace/kevin/collect_news_gdelt.py
+- 数据处理：
+  - /workspace/kevin/clean_news_data.py
+  - /workspace/kevin/analyze_sentiment.py
+- 模型训练：
+  - /workspace/kevin/train_model_mlp.py
+  - /workspace/kevin/train_model_lstm.py
+  - /workspace/kevin/train_model_finbert_lstm.py
+- 管道执行：
+  - /workspace/kevin/run_full_pipeline.py
+
+数据文件
+--------
+- 最新股价：/workspace/kevin/stock_price.csv
+- 原始新闻：/workspace/kevin/news.csv
+- 清洗后新闻：/workspace/kevin/news_data.csv
+- 情绪得分：/workspace/kevin/sentiment.csv
+- 情绪调试：/workspace/kevin/sentiment_daily_debug.csv
+- 备份目录：/workspace/kevin/backup_data/
+
+如何查看
+--------
+- 命令行：cd /workspace/kevin && ls
+- Windows 资源管理器：打开 D:\\projet\\ 并查看对应文件
+- VS Code/IDE：将仓库根目录添加到工作区即可浏览全部文件
+
+======================================================================
