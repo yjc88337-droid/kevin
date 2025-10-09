@@ -79,7 +79,7 @@
 
 ### 快速测试（推荐先运行）
 ```bash
-cd D:\CE301project\FinBERT-LSTM-QQQ
+cd D:\projet
 .venv\Scripts\activate
 python test_model_quick.py
 ```
